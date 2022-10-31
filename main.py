@@ -12,7 +12,7 @@ class Shelter:
           self.cats.append((name, self.order))
           self.order += 1
       else:
-          raise 'Animal type dog or cat allowed!'
+          raise Exception('Animal type dog or cat allowed!')
 
   def dequeueAny(self):
       if not self.dogs and not self.cats:
